@@ -27,7 +27,7 @@ namespace FullStack.API.Controllers
         [Route("{id:guid}")]
         public async Task<IActionResult> GetEmployee([FromRoute] Guid id)
         {
-            var employee = await context.Employees.FindAsync(id);
+            var employee = await context.Employees.FirstOrDefaultAsync(x => x.Id == id);
 
             if (employee != null)
             {
