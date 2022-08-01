@@ -1,3 +1,4 @@
+import { EmployeesService } from './../../../services/employees/employees.service';
 import { Employee } from './../../../models/employee';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -8,7 +9,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./edit-employee.component.css'],
 })
 export class EditEmployeeComponent implements OnInit {
-  constructor(private activatedRoute: ActivatedRoute) {}
+  employeeRequest: Employee = {
+    name: '',
+    email: '',
+    phone: '',
+    salary: 0,
+    department: '',
+  };
+  constructor(
+    private employeesService: EmployeesService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe({
@@ -16,7 +27,11 @@ export class EditEmployeeComponent implements OnInit {
         const id = params.get('id');
 
         if (id) {
-          
+          this.employeesService.getEmployee(id).subscribe({
+            next: (data) => {
+              this.employeeRequest = data;
+            },
+          });
         }
       },
     });
