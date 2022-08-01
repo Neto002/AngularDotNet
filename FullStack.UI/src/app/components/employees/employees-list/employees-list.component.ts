@@ -1,7 +1,6 @@
 import { EmployeesService } from './../../../services/employees/employees.service';
 import { Employee } from './../../../models/employee';
 import { Component, OnInit } from '@angular/core';
-import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-employees-list',
@@ -17,10 +16,9 @@ export class EmployeesListComponent implements OnInit {
     this.getEmployees();
   }
 
-  getEmployees() {
+  getEmployees(): void {
     this.employeesService.getEmployees().subscribe({
       next: (data) => {
-        console.log(data);
         this.employees = data;
       },
       error: (response) => {
