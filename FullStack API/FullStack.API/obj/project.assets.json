@@ -1150,11 +1150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\VisualStudio2022\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API\\FullStack.API.csproj",
+      "projectUniqueName": "E:\\Projects\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API.csproj",
       "projectName": "FullStack.API",
-      "projectPath": "D:\\Projects\\VisualStudio2022\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API\\FullStack.API.csproj",
+      "projectPath": "E:\\Projects\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API.csproj",
       "packagesPath": "C:\\Users\\Neto\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\VisualStudio2022\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API\\obj\\",
+      "outputPath": "E:\\Projects\\AngularDotNet\\FullStack API\\FullStack.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Neto\\AppData\\Roaming\\NuGet\\NuGet.Config",

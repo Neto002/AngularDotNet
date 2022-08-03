@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QmgtKDe5UISP8XlWzn1g4wQIZJ5thuh9mz0m2GsLBNZI3rMalbdvr0inikMveJI5hKZLGN5yCL2ZHU1i/PQZZw==",
+  "dgSpecHash": "EQDN7xaAuLQ9BRznYg6RH5hmz436ZskL7MiDdTsxv5FtGBgfzhx9yixvLB1R/1/v46JE2zUZfSoJZti0SbxwqA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\VisualStudio2022\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API\\FullStack.API.csproj",
+  "projectFilePath": "E:\\Projects\\AngularDotNet\\FullStack API\\FullStack.API\\FullStack.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Neto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Neto\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
