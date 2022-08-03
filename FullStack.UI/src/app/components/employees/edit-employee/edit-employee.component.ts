@@ -1,7 +1,7 @@
 import { EmployeesService } from './../../../services/employees/employees.service';
 import { Employee } from './../../../models/employee';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-employee',
@@ -18,7 +18,8 @@ export class EditEmployeeComponent implements OnInit {
   };
   constructor(
     private employeesService: EmployeesService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -35,5 +36,15 @@ export class EditEmployeeComponent implements OnInit {
         }
       },
     });
+  }
+
+  updateEmployee() {
+    this.employeesService
+      .updateEmployee(this.employeeRequest.id!, this.employeeRequest)
+      .subscribe({
+        next: (response) => {
+          this.router.navigate(['employees']);
+        },
+      });
   }
 }

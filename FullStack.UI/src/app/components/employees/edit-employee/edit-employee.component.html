@@ -1,7 +1,7 @@
 <div class="container my-5">
   <h1 class="mb-3">Edit Employee</h1>
 
-  <form class="w-50" #form="ngForm">
+  <form class="w-50" #form="ngForm" (ngSubmit)="updateEmployee()">
     <div class="mb-3">
       <label for="name" class="form-label">Id</label>
       <input type="text" class="form-control" id="id" name="id" readonly [(ngModel)]="employeeRequest.id">
