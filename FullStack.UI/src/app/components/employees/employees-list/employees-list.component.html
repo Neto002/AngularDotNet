@@ -19,12 +19,12 @@
         <td>{{ employee.name }}</td>
         <td>{{ employee.email }}</td>
         <td>{{ employee.phone }}</td>
-        <td>{{ employee.salary }}</td>
+        <td>{{ employee.salary | currency:'BRL' }}</td>
         <td>{{ employee.department }}</td>
         <td>
           <div class="btn-group" role="group">
             <button class="btn btn-primary" [routerLink]="['/employees', 'edit', employee.id]">Edit</button>
-            <button class="btn btn-danger">Delete</button>
+            <button class="btn btn-danger" (click)="deleteEmployee(employee.id!)">Delete</button>
           </div>
         </td>
       </tr>
